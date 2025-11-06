@@ -9,37 +9,89 @@
         * {
             margin: 0;
             box-sizing: border-box;
+            text-decoration: none;
+            font-family: "맑은 고딕";
         }
 
         ul,
         ol,
         li {
             list-style: none;
-            margin: 0;
+            margin: 0 auto;
             padding: 0;
         }
 
         header {
             width: 2684px;
             height: 101px;
-            background-color: red;
             margin: 0 auto;
         }
 
-        #topmenu {
+        .topmenu {
             width: 980px;
             height: 59px;
-            background-color: yellowgreen;
             margin: 0 auto;
-            position: relative
         }
 
-        #undermenu {
+        .logo>img {
+            width: 155px;
+            height: 47;
+        }
+
+        .util {
+            list-style: none;
+            margin: -50px 0px 0px 300px;
+            padding: 0;
+            justify-content: flex-end;
+        }
+
+        .util li {
+
+            margin: 0px 20px;
+            float: left;
+        }
+
+        .util_Search {
+            width: 150px;
+            height: 26px;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 0px;
+        }
+
+        .logo2>img {
+            width: 50px;
+            height: 51.59px;
+            float: right;
+            margin: 0px 30px 0px 0;
+        }
+
+        .gnd {
             width: 980px;
             height: 41px;
             margin: 0 auto;
-            position: relative;
-            background-color: blue;
+        }
+
+
+        .gnd_menu {
+            width: 760px;
+            height: 41px;
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 2px;
+        }
+
+        .gnd_menu li a {
+            text-decoration: none;
+            color: #000;
+            font-weight: 600;
+            font-size: 16px;
         }
 
         section {
@@ -48,14 +100,40 @@
             background-color: orange;
             margin: 0 auto;
         }
-        #strong{width: 900px; height:201px; background-color: rgb(35, 194, 74); margin: 0 auto;}
-        #btn{width : 900px; height: 20px; background-color: aquamarine; margin : 100px 0px 100px 880px;}
-        #quick{width: 980px; height: 250px; background-color: green; margin:0 auto; }
+
+        .strong {
+            width: 900px;
+            height: 201px;
+            background-color: rgb(35, 194, 74);
+            margin: 0 auto;
+        }
+
+        .btn {
+            width: 900px;
+            height: 20px;
+            background-color: aquamarine;
+            margin: 100px 0px 100px 880px;
+        }
+
+        .quick {
+            width: 980px;
+            height: 250px;
+            background-color: green;
+            margin: 0 auto;
+        }
 
         #main1 {
             width: 2684px;
             height: 250px;
             background-color: yellow;
+            margin: 0 auto;
+            clear: both;
+        }
+
+        #main1 .inbox {
+            width: 980px;
+            height: 250px;
+            background-color: red;
             margin: 0 auto;
         }
 
@@ -66,15 +144,32 @@
             margin: 0 auto;
         }
 
+        #main2 .inb {
+            width: 980px;
+            height: 250px;
+            background-color: yellow;
+            margin: 0 auto;
+        }
+
         ul {
             list-style: none;
         }
 
-        .etc {
+        #etc {
             width: 980px;
             height: 140px;
             background-color: blue;
             margin: 0 auto;
+            text-align: center;
+        }
+
+        #etc .box {
+            width: 150px;
+            height: 140px;
+            background-color: white;
+            display: inline-block;
+            margin: 0 auto;
+            vertical-align: top;
         }
 
         footer {
@@ -83,31 +178,109 @@
             background-color: navy;
             margin: 0 auto;
         }
+
+        .footinbox {
+            width: 980px;
+            height: 99px;
+            background-color: red;
+            margin: 0 auto;
+        }
     </style>
 
 
 
 
 </head>
+<wrap>
 
-<body>
-    <header>
+    <body>
+        <header>
 
-        <div id="topmenu"></div>
-        <div id="undermenu"></div>
-        <div id="seven"></div>
-    </header>
-    
-    <section>
-        <div id="strong"></div>
-        <div id="btn"></div>
-        <div id="quick"></div>
-    </section>
-    <div id="main1"></div>
-    <div id="main2"></div>
-    <ul class="etc"></ul>
-    <footer></footer>
+            <div class="topmenu">
+                <a href="#" class="logo"><img src="삼천리/logo.gif" alt="삼천리 로고"></a>
+                <ul class="util">
+                    <li><a href="#"> 로그인 </a></li>
+                    <li><a href="#"> 회원가입 </a></li>
+                    <li><a href="#"> 사이트맵 </a></li>
+                    <li><a href="#"> English </a></li>
+                </ul>
+                <div class="util_search">
+                    <form name="commonSearchform" action="/search/main.do" onsubmit="goCommonSearch();return false;">
+                        <input type="text" name="findStr" placeholder="검색어 입력" title="검색어">
+                        <a href="#"><img src="삼천리\btn_search_1.gif" alt="검색"></a>
+                    </form>
+                </div>
+                <a href="#" class="logo2"><img src="삼천리\70th.jpg" alt="삼천리 70주년"></a>
+            </div>
+            <div class="gnd">
+                <ul class="gnd_menu">
+                    <li><a href="#" class="depTit">기업소개</a></li>
+                    <li><a href="#" class="depTit">사업소개</a></li>
+                    <li><a href="#" class="depTit">R & D</a></li>
+                    <li><a href="#" class="depTit">투자정보</a></li>
+                    <li><a href="#" class="depTit">홍보센터</a></li>
+                    <li><a href="#" class="depTit">고객센터</a></li>
+                    <li><a href="#" class="depTit">인재채용</a></li>
+                    <li><a href="#" class="depTit">윤리경영</a></li>
+                    <li><a href="#" target="_blank"><img src="삼천리/img_head_youtube.jpg" alt="유튜브"></a></li>
+                    <li><a href="#" target="_blank"><img src="삼천리/img_head_sabo.jpg" alt="사보"></a></li>
+                </ul>
+            </div>
 
+        </header>
+
+        <div class="main_Top" id="gotoMainContents" style="overflow: hidden;">
+
+            <ul class="visual">
+                <li style="background-image: url(&quot;/assets/img/main/bg_visual_1.jpg&quot;); left: 0%;"><strong>신뢰와
+                        나눔 속에<br>사랑 받는 기업으로</strong><span></span></li>
+            </ul>
+
+            <div class="btns">
+                <a href="#" title="신뢰와 나눔속에 사랑받는 기업으로"><img src="/assets/img/main/btn_off_4.png"
+                        alt="신뢰와 나눔속에 사랑받는 기업으로 선택"></a>
+                &nbsp;&nbsp;
+                <a href="#"><img src="../img/main/btn_stop_4.png" alt="자동롤링 멈춤" /></a>
+            </div>
+ㄴ
+
+            <div class="quickLink_bg"></div>
+            <ul class="quickLink">
+                <li class="search01"><a href="#">요금조회</a></li>
+                <li class="search02"><a href="#">요금납부</a></li>
+                <li class="search03"><a onclick="checkSimplereg();" href="#">전출입신청</a></li>
+                <li class="search04"><a href="#">신청서양식</a></li>
+                <li class="quickSearch">
+                    <form name="feeForm" onsubmit="openSmplResult();return false;">
+                        <strong for="quickSearch01">간편요금조회</strong>
+                        <div class="quickSearch_box">
+                            <input type="text" name="caNumber" id="quickSearch01" title="납부자번호" placeholder="납부자번호 입력"
+                                maxlength="15">
+                            <a href="#">간편요금조회</a>
+                        </div>
+                    </form>
+                </li>
+                <li class="last"><a href="#"><img src="/assets/img/main/btn_search01.gif" alt="협력업체 바로가기"></a></li>
+            </ul>
+        </div>
+        <div id="main1">
+            <div class="inbox"></div>
+        </div>
+        <div id="main2">
+            <div class="inb"></div>
+        </div>
+        <ul id="etc">
+            <li class="box"></li>
+            <li class="box"></li>
+            <li class="box"></li>
+            <li class="box"></li>
+            <li class="box"></li>
+            <li class="box"></li>
+        </ul>
+        <footer>
+            <div class=footinbox></div>
+        </footer>
+</wrap>
 
 
 

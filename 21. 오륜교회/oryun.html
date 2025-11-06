@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Malgun Gothic', '맑은 고딕', 'SpoqaHanSans',
+                'Noto Sans KR', sans-serif;
+            ;
+            font-size: 14px;
+            font-weight: 400;
+            color: #333333;
+            line-height: 1.4em;
+            margin: 0;
+            padding: 0;
+            display: block;
+            -webkit-text-size-adjust: none;
+            word-break: keep-all;
+            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+        }
+
+        #wrap {
+            width: 2655px;
+            height: 1934px;
+            overflow: hidden;
+            min-width: 1180px;
+        }
+
+        #header {
+            position: relative;
+            width: 2655px;
+            height: 127px;
+            background-color: red;
+            border-bottom: 2px solid #448ccb;
+        }
+
+        .menuTree {
+            width: 100%;
+            height: 35px;
+            position: relative;
+            background-color: green;
+        }
+
+        .inner {
+            position: relative;
+            margin: 0 auto;
+            width: 1180px;
+            height: 1px;
+            background-color: skyblue;
+        }
+
+        .inbs {
+            width: 2655px;
+            height: 35px;
+
+        }
+
+        #inner {
+            width: 1178px;
+            height: 0.5px;
+            position: relative;
+            margin: 0 auto;
+            background-color: orange;
+        }
+
+        #topSearch {
+            display: none;
+            position: absolute;
+            top: -74px;
+            right: 0;
+            width: 300px;
+            z-index: 999999;
+            background-color: aqua;
+        }
+
+        .container {
+            width: 2655px;
+            height: 1654px;
+            position: relative;
+            margin: 0 auto;
+            background-color: yellow;
+            clear: both;
+        }
+
+        .layerPop {
+            position: fixed;
+            display: none;
+            width: 100%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            z-index: 999999;
+            font-family: 'nanumsquarer';
+            background-color: red;
+        }
+
+        #Main #mVisual{
+            position: relative;
+            width : 100%;
+            height : 429px;
+            overflow: hidden;
+            z-index : 0;
+            background-color: purple;
+        }
+
+        #Main #section1{
+            position : relative;
+            width: 100%;
+            height: auto;
+            padding : 20px 0;
+            overflow: hidden;
+            background-color: #e2ecf5;
+            z-index : 0;
+        }
+
+        #section2{
+            position : relative;
+            width: 100%;
+            height: 450px;
+            padding : 60px 0 60px 0;
+            overflow: hidden;
+            box-sizing: border-box;
+            background-color: fuchsia;
+            z-index : 0;
+        }
+        
+        .m_quick { 
+            display:none
+        }
+
+
+        #tableJsCss {
+            height: 0;
+            width: 0;
+        }
+
+        #footer {
+            width: 2655px;
+            height: 152px;
+            background-color: #898989;
+            position: relative;
+            clear: both;
+        }
+
+        #footer #footerNav{
+            height: 43px;
+            background-color: #6e6e6e;
+        }
+
+        #footer #footerCopyright {
+            position : relative;
+            margin : 0 auto;
+            width : 1180px;
+            background-color: aqua;
+        }
+
+        #overlay {
+            display: none;
+            position: fixed;
+            background-color: rgba(0, 0, 0, 0.7);
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            cursor: pointer;
+            z-index: 999999;
+        }
+    </style>
+
+
+
+</head>
+
+<body class="sub">
+    <dl id="skipLink">
+        <dt>바로가기 메뉴</dt>
+        <dd><a href="#">본문 바로가기</a></dd>
+        <dd><a href="#">메뉴 바로가기</a></dd>
+    </dl>
+    <div id="wrap">
+        <div id="header">
+            <div class="menuTree">
+                <div class="inner">
+                    <a href="#" class="openRsponsive">Menu</a>
+                    <h1><a href="#">
+                            <img src="#" alt="오륜교회 로고">
+                        </a></h1>
+                </div>
+                <div class="inbs" style></div>
+            </div>
+        </div>
+        <div id="inner">
+            <div id="topSearch"></div>
+        </div>
+        <div id="Main" class="container">
+            <div class="layerPop" id="popSns"></div>
+            <div id="mVisual"></div>
+            <div id="section1"></div>
+            <div id="section2"></div>
+            <div class="m_quick"></div>
+        </div>
+        <div id="tableJsCss">&nbsp;</div>
+        <div id="footer" data>
+            <div id="footerNav"></div>
+            <div id="footerCopyright" class="inner"></div>
+        </div>
+        <div id="overlay"></div>
+    </div>
+
+</body>
+
+</html>
