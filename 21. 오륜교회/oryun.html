@@ -1,215 +1,1504 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        body {
-            font-family: 'Malgun Gothic', '맑은 고딕', 'SpoqaHanSans',
-                'Noto Sans KR', sans-serif;
-            ;
-            font-size: 14px;
-            font-weight: 400;
-            color: #333333;
-            line-height: 1.4em;
-            margin: 0;
-            padding: 0;
-            display: block;
-            -webkit-text-size-adjust: none;
-            word-break: keep-all;
-            -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-        }
-
-        #wrap {
-            width: 2655px;
-            height: 1934px;
-            overflow: hidden;
-            min-width: 1180px;
-        }
-
-        #header {
-            position: relative;
-            width: 2655px;
-            height: 127px;
-            background-color: red;
-            border-bottom: 2px solid #448ccb;
-        }
-
-        .menuTree {
-            width: 100%;
-            height: 35px;
-            position: relative;
-            background-color: green;
-        }
-
-        .inner {
-            position: relative;
-            margin: 0 auto;
-            width: 1180px;
-            height: 1px;
-            background-color: skyblue;
-        }
-
-        .inbs {
-            width: 2655px;
-            height: 35px;
-
-        }
-
-        #inner {
-            width: 1178px;
-            height: 0.5px;
-            position: relative;
-            margin: 0 auto;
-            background-color: orange;
-        }
-
-        #topSearch {
-            display: none;
-            position: absolute;
-            top: -74px;
-            right: 0;
-            width: 300px;
-            z-index: 999999;
-            background-color: aqua;
-        }
-
-        .container {
-            width: 2655px;
-            height: 1654px;
-            position: relative;
-            margin: 0 auto;
-            background-color: yellow;
-            clear: both;
-        }
-
-        .layerPop {
-            position: fixed;
-            display: none;
-            width: 100%;
-            height: 100%;
-            left: 0;
-            top: 0;
-            z-index: 999999;
-            font-family: 'nanumsquarer';
-            background-color: red;
-        }
-
-        #Main #mVisual{
-            position: relative;
-            width : 100%;
-            height : 429px;
-            overflow: hidden;
-            z-index : 0;
-            background-color: purple;
-        }
-
-        #Main #section1{
-            position : relative;
-            width: 100%;
-            height: auto;
-            padding : 20px 0;
-            overflow: hidden;
-            background-color: #e2ecf5;
-            z-index : 0;
-        }
-
-        #section2{
-            position : relative;
-            width: 100%;
-            height: 450px;
-            padding : 60px 0 60px 0;
-            overflow: hidden;
-            box-sizing: border-box;
-            background-color: fuchsia;
-            z-index : 0;
-        }
-        
-        .m_quick { 
-            display:none
-        }
+<meta http-equiv="content-Type" content="text/html; charset=utf-8">
+<title>오륜교회 </title>
 
 
-        #tableJsCss {
-            height: 0;
-            width: 0;
-        }
+<meta itemprop="name"      content="오륜교회">
+<meta itemprop="image"     content="/assets/oryun_share.jpg">
+<meta itemprop="description" content="행복한 교회 건강한 교회 HAPPY CHURCH HEALTHY CHURCH">
+<meta itemprop="url"    content="//www.oryun.org">
+<meta itemprop="keywords"    content="오륜교회 김은호목사 다니엘기도회  ocbn 주만나">
 
-        #footer {
-            width: 2655px;
-            height: 152px;
-            background-color: #898989;
-            position: relative;
-            clear: both;
-        }
+<meta property="og:title"  content="오륜교회">
+<meta property="og:site_name" content="오륜교회">
+<meta property="og:url" content="//www.oryun.org">
+<meta property="og:type" content="website">
+<meta property="og:image"  content="/assets/oryun_share.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="675">
+<meta property="og:description"  content="행복한 교회 건강한 교회 HAPPY CHURCH HEALTHY CHURCH">
+<!--<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">-->
+<link rel="stylesheet" href="//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css">
+<link rel="stylesheet" type="text/css" href="/assets/ko/css/base_pc.css?1762473595"  media='all' />
+<script src="//cdn.jwplayer.com/libraries/4yHKdkFx.js"></script>
+<script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="/assets/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="/assets/js/jquery.bxslider.min.js"></script>
+<script src="/assets/js/jquery.cookie.js"></script>
+<script src="/assets/js/sns.js?1762473595"></script>
+<script src="/assets/js/common.js?1762473595"></script>
+<script src="/assets/js/common_pc.js?1762473595"></script>
+<script src="/assets/js/common1.js?1762473595"></script>
+<script src="/assets/js/slick.js"></script>
+<script src="/assets/js/table.js"></script>
+<script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
+<script src="//www.youtube.com/iframe_api"></script>
+<script src="//player.vimeo.com/api/player.js"></script>
+<script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=4607affa90b696b5f6f4266b5d629de5"></script>
+<!--cdn moved by waym 2023.01.18 <script src="//cdn.rawgit.com/hilios/jQuery.countdown/2.2.0/dist/jquery.countdown.min.js"></script>-->
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery.countdown/2.2.0/jquery.countdown.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/moment@2.27.0/moment.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/lodash@4.17.19/lodash.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
+<script data-ad-client="ca-pub-1095740216150740" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!--<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>-->
+<!--<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />-->
+<script src="/assets/js/jquery.modal.js"></script>
+<link rel="stylesheet" type="text/css" href="/assets/ko/css/jquery.modal.css?1762473595" media='all' />
+<link rel="stylesheet" type="text/css" href="/assets/ko/css/xeicon.min.css?1762473595" media='all' />
 
-        #footer #footerNav{
-            height: 43px;
-            background-color: #6e6e6e;
-        }
-
-        #footer #footerCopyright {
-            position : relative;
-            margin : 0 auto;
-            width : 1180px;
-            background-color: aqua;
-        }
-
-        #overlay {
-            display: none;
-            position: fixed;
-            background-color: rgba(0, 0, 0, 0.7);
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            cursor: pointer;
-            z-index: 999999;
-        }
-    </style>
-
-
-
+<script>
+Kakao.init('4607affa90b696b5f6f4266b5d629de5');
+$(document).ready(function() {
+	$(".link_share").click(function() {
+		$("#contentCopy").select();
+		document.execCommand("copy");
+		alert('링크가 복사되었습니다.');
+	});
+	$(".sns_share").click(function() {
+		sns = $(this).attr("data");
+		url = $("#contentCopy").val(); 
+		txt = $("#navi_title1").text() + ' > ' + $("#navi_title2").text() + ' > ' +$("#navi_title3").text();
+		sendSns(sns, url, txt)
+	});
+});
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-44815045-1"></script>
+<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){
+		dataLayer.push(arguments);
+	}
+	gtag('js', new Date());
+	gtag('config', 'UA-44815045-1');
+</script>
 </head>
-
+<!-- header -->
 <body class="sub">
-    <dl id="skipLink">
-        <dt>바로가기 메뉴</dt>
-        <dd><a href="#">본문 바로가기</a></dd>
-        <dd><a href="#">메뉴 바로가기</a></dd>
-    </dl>
-    <div id="wrap">
-        <div id="header">
-            <div class="menuTree">
-                <div class="inner">
-                    <a href="#" class="openRsponsive">Menu</a>
-                    <h1><a href="#">
-                            <img src="#" alt="오륜교회 로고">
-                        </a></h1>
-                </div>
-                <div class="inbs" style></div>
-            </div>
-        </div>
-        <div id="inner">
-            <div id="topSearch"></div>
-        </div>
-        <div id="Main" class="container">
-            <div class="layerPop" id="popSns"></div>
-            <div id="mVisual"></div>
-            <div id="section1"></div>
-            <div id="section2"></div>
-            <div class="m_quick"></div>
-        </div>
-        <div id="tableJsCss">&nbsp;</div>
-        <div id="footer" data>
-            <div id="footerNav"></div>
-            <div id="footerCopyright" class="inner"></div>
-        </div>
-        <div id="overlay"></div>
-    </div>
+<dl id="skipLink">
+	<dt>바로가기 메뉴</dt>
+	<dd><a href="#main">본문 바로가기</a></dd>
+	<dd><a href="#gnb">메뉴 바로가기</a></dd>
+</dl>
+<!-- wrap -->
+<div id="wrap">
+	<!-- header -->
+	<div id="header">			
+			<div class="menuTree">
+			    <!-- inner -->
+				<div class="inner">
+					<a href="#" class="openResponsiveMenu">Menu</a>
+					<h1><a href="/"><img src="/assets/ko/img/logo.png" alt="오륜교회 로고"></a></h1>
+					<div class="btnOnAir">
+					<div class="onair" style="display:none;"><a href="/tv/?menu=55"><img src="/assets/ko/img/btn_Air_on.png" alt="생방송 중" class="onair"><span>생방송 중</span></a></div>
+					<div class="offair" style="display:none;"><img src="/assets/ko/img/btn_Air_next.png" alt="다음생방송" class="offair"><span class="next_time">00:00:00</span></div>
+					</div>		
+					<a href="#open" class="btn_Search">검색열기</a>
+			   </div>
+			   <!-- //inner -->
+			   <!-- lnbs -->
+			   <div class="lnbs">
+				<div class="menuTopWrap_bg"></div>
+				<div class="menuTopWrap topMenuStyleLine">
+					<!-- topBar -->
+					<div id="topBar">
+						<div class="inner">
+							<!-- languge -->
+							<!--<div class="languge">
+							   <div id="sltLanguage" class="">
+									<button type="button"><img src="/assets/img/icon_lang1.gif" alt=""> 한국어</button>
+<div class="lst">
+<ul>
+</ul>
+<span class="menu_close_lst btns">닫기</span>
+</div>
+								</div>
+							</div> -->
+							<!--// languge -->
+							<!-- membership -->
+							<div class="membership">
+								<ul>
+																<!--<li class="first"><a href="/member/login?refer=THc9PQ==">로그인</a></li>
+									<li><a href="/member/register">회원가입</a></li> -->
+																<li class="hide" style="display:none;"><a href="#open" onclick="window.open('/tv/M_popPlayer.html','popplayerMobile','width=480, height=640, left=0, top=0, location=no, toolbar=no, status=no'); return false;" target="_blank" title="새창">플레이리스트</a></li>
+									<li class="notice"><a href="/life/?menu=241">공지사항</a></li>
+								</ul>
+							</div>
+							<!--// membership -->
+						</div>
+					</div>
+					<!-- //topBar -->
+					<!-- mainmenu -->
+					<div id="mainmenu" class="">
+						<div class="lnbList_bg" style="display:none;"><div class='lnbList_bg_top'></div><div class='lnbList_bg_bottom'></div></div>
+						<div class="lnbList">
+							 <ul class="main-menu">
+							 <li class="menu-child first" data="1">
+	<a href="javascript:void(0);"><span>교회 안내</span></a>
+	<div class="menu_bg">
+		<div class="menu_content icon1" data="1">
+			<p class="menu_title">교회 안내</p>
+			<p class="menu_banner"><a href="/guide/?menu=22"><img src="/c/i18n/2020/05/695cf256-4fe1-4ee5-bcf5-60c71a3df96c/original.jpg" alt=""></a></p>
+		</div>
+	<ul class="sub-menu">
+	<li class="menu-child menu-child-2 sort11">
+		<a href="javascript:void(0);">교회소개</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=14" target="_self">비전</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=15" target="_self">역사</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=16" target="_self">설립목사</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=475" target="_self">담임목사</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=17" target="_self">오시는길</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=18" target="_self">주일예배 주차안내</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=19" target="_self">교회탐방</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=20" target="_self">섬기는사람들</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=21" target="_self">로고</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort12">
+		<a href="javascript:void(0);">예배안내</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=22" target="_self">예배 시간 및 장소</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=23" target="_self">오륜교회 예배</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort13">
+		<a href="javascript:void(0);">전화번호안내</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=24" target="_self">전화번호안내</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort14">
+		<a href="javascript:void(0);">예배차량안내</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/guide/shuttle/?wtype=0&menu=25" target="_self">주일예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/shuttle/?wtype=1&menu=26" target="_self">수요예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/shuttle/?wtype=2&menu=27" target="_self">금요기도회</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/shuttle/?wtype=3&menu=28" target="_self">새벽예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/shuttle/?wtype=4&menu=29" target="_self">송구영신</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/shuttle/?wtype=5&menu=30" target="_self">다니엘기도회</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort15">
+		<a href="javascript:void(0);">장소안내</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=31" target="_self">비전센터</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=32" target="_self">제1교육관</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=33" target="_self">제2교육관</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=34" target="_self">제3교육관</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=35" target="_self">비전빌리지</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=36" target="_self">분립교회</a></li>
+	<li class="menu-child menu-child-3"><a href="http://www.maranathagh.co.kr" target="_self">마라나타 하늘정원</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort16">
+		<a href="javascript:void(0);">새가족안내</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=37" target="_self">새가족등록</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=38" target="_self">새가족교육</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=39" target="_self">소그룹안내</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort17">
+		<a href="javascript:void(0);">오륜양육훈련</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=40" target="_self">철학과 방향</a></li>
+	<li class="menu-child menu-child-3"><a href="/guide/?menu=41" target="_self">프로그램 소개</a></li>
+	</ul>
+	</li>
+	</ul>
+	</div>
+</li>
+<li class="menu-child" data="2">
+	<a href="javascript:void(0);"><span>오륜Life<em class="menu_icon_red1"></em></span></a>
+	<div class="menu_bg">
+		<div class="menu_content icon6" data="2">
+			<p class="menu_title">오륜Life</p>
+			<p class="menu_banner"><a href="/life/?menu=252"><img src="/c/i18n/2020/05/7dec18b6-1e3a-4739-b9bf-442805db194d/original.jpg" alt=""></a></p>
+		</div>
+	<ul class="sub-menu">
+	<li class="menu-child menu-child-2 sort21">
+		<a href="javascript:void(0);">알림/소식<em class="menu_icon_red2"></em></a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/life/?menu=241" target="_self">공지사항</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=242" target="_self">행사/소식</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=246" target="_self">예배스케치</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=247" target="_self">교우소식<em class="menu_icon_red3"></em></a></li>
+	<li class="menu-child menu-child-3"><a href="https://oryun.org/guide/?menu=44" target="_self">보도자료</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=245" target="_self">FAQ</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort22">
+		<a href="javascript:void(0);">주만나 QT</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/life/?menu=248" target="_self">오늘의 QT</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=249" target="_self">바이블</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort23">
+		<a href="javascript:void(0);">온라인행정</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/life/?menu=252" target="_self">헌금안내</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=254" target="_self">증명서 발급</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=431" target="_self">협력기업</a></li>
+	<li class="menu-child menu-child-3"><a href="https://mas.ohjic.com/member/intro/oryun" target="_self">온라인센터(QR코드)</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=253" target="_self">기부금영수증</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort24">
+		<a href="javascript:void(0);">자료실</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/life/?menu=255" target="_self">주보</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=256" target="_self">오륜설교나눔</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=258" target="_self">그레이스저널</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=430" target="_self">다운로드</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=450" target="_self">52주 암송구절</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=507" target="_self">미션트립신청서</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort25">
+		<a href="javascript:void(0);">교회시설</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/life/?menu=260" target="_self">웨딩안내</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=261" target="_self">도서관</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=262" target="_self">오륜서점</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=263" target="_self">토비아스</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort26">
+		<a href="javascript:void(0);">교회행사</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/life/?menu=268" target="_self">주요행사</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=484" target="_self">목회자리조이스</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=272" target="_self">사모리조이스</a></li>
+	<li class="menu-child menu-child-3"><a href="/life/?menu=273" target="_self">아름다운 여행 For You</a></li>
+	</ul>
+	</li>
+	</ul>
+	</div>
+</li>
+<li class="menu-child" data="3">
+	<a href="javascript:void(0);"><span>오륜 TV</span></a>
+	<div class="menu_bg">
+		<div class="menu_content icon2" data="3">
+			<p class="menu_title">오륜 TV</p>
+			<p class="menu_banner"><a href="https://www.youtube.com/user/oryunchurch"><img src="/c/i18n/2020/05/290602ca-bcb0-4d70-a053-0978cecaa526/original.jpg" alt=""></a></p>
+		</div>
+	<ul class="sub-menu">
+	<li class="menu-child menu-child-2 sort31">
+		<a href="javascript:void(0);">Tv메인</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=428" target="_self">Tv 홈</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=65" target="_self">TV공지사항</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=66" target="_self">FAQ</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort32">
+		<a href="javascript:void(0);">생방송</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=55" target="_self">생방송</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=56" target="_self">생방송 스케쥴</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort33">
+		<a href="javascript:void(0);">오륜TV뉴스</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=89" target="_self">오륜TV뉴스</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort34">
+		<a href="javascript:void(0);">크리스천 팅</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=436" target="_self">크리스천 팅</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort35">
+		<a href="javascript:void(0);">설교</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=57" target="_self">주일예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=58" target="_self">수요예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=59" target="_self">금요기도회</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=61" target="_self">주일예배(부목사)</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=62" target="_self">외부강사</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort36">
+		<a href="javascript:void(0);">찬양</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=63" target="_self">경배와 찬양</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=64" target="_self">콰이어</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort37">
+		<a href="javascript:void(0);">행사/집회</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=407" target="_self">특별영상예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=408" target="_self">세례식</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=493" target="_self">목회자리조이스</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=70" target="_self">사모리조이스</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=69" target="_self">새생명축제</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=71" target="_self">특별새벽기도회</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=68" target="_self">스탠드펌</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=72" target="_self">성탄절</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=73" target="_self">송구영신예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=74" target="_self">부흥회</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=76" target="_self">20주년</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort38">
+		<a href="javascript:void(0);">문화</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=86" target="_self">하늘카페</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=88" target="_self">스킷드라마</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=417" target="_self">간증드라마</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort39">
+		<a href="javascript:void(0);">어린이/청소년</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=81" target="_self">팡팡페스티벌</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=83" target="_self">캠프</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=84" target="_self">공연/연주회</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=85" target="_self">Youth Conference</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=412" target="_self">브니엘새벽기도</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort310">
+		<a href="javascript:void(0);">기타</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=90" target="_self">기타영상</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=91" target="_self">홍보영상</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=92" target="_self">선교관련</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort311">
+		<a href="javascript:void(0);">세미나</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=79" target="_self">꿈미</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=80" target="_self">교사세미나</a></li>
+	<li class="menu-child menu-child-3"><a href="/tv/?menu=449" target="_self">성경을 말하다</a></li>
+	</ul>
+	</li>
+	</ul>
+	</div>
+</li>
+<li class="menu-child" data="4">
+	<a href="javascript:void(0);"><span>교구</span></a>
+	<div class="menu_bg">
+		<div class="menu_content icon3" data="4">
+			<p class="menu_title">교구</p>
+			<p class="menu_banner"><a href="https://forms.gle/8FpzuoaHHgZr2MG76"><img src="/c/i18n/2020/05/f0947768-df1e-4338-9d4a-9d566163dcf1/original.jpg" alt=""></a></p>
+		</div>
+	<ul class="sub-menu">
+	<li class="menu-child menu-child-2 sort41">
+		<a href="javascript:void(0);">갈렙대교구</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=281#281" target="_self">방이교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=282#282" target="_self">송파교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=284#284" target="_self">잠실교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=285#285" target="_self">강남교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=367#367" target="_self">파크리오교구</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort42">
+		<a href="javascript:void(0);">바울대교구</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=287#287" target="_self">강동1교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=288#288" target="_self">강동2교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=503#503" target="_self">강동3교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=505#505" target="_self">포레온교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=296#296" target="_self">경기북교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=289#289" target="_self">하남교구</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort43">
+		<a href="javascript:void(0);">다니엘대교구</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=290#290" target="_self">올림픽교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=292#292" target="_self">오금교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=293#293" target="_self">가락교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=294#294" target="_self">거여마천위례교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=295#295" target="_self">경기남교구</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort44">
+		<a href="javascript:void(0);">요셉대교구</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=297#297" target="_self">성내1교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=298#298" target="_self">성내2교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=299#299" target="_self">풍납교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=300#300" target="_self">광진교구</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/parish/?menu=301#301" target="_self">강북교구</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort45">
+		<a href="javascript:void(0);">부서</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mokyang/?menu=107" target="_self">부서전체</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/?menu=109" target="_self">문화사역부</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/?menu=110" target="_self">복지부</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/?menu=111" target="_self">새가족부</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/?menu=112" target="_self">양육훈련부</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/?menu=113" target="_self">예배부</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/?menu=114" target="_self">전도부</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/?menu=115" target="_self">찬양사역부-찬양팀</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/?menu=368" target="_self">찬양사역부-콰이어</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/?menu=116" target="_self">출판홍보부</a></li>
+	<li class="menu-child menu-child-3"><a href="/mokyang/?menu=117" target="_self">회복사역부</a></li>
+	</ul>
+	</li>
+	</ul>
+	</div>
+</li>
+<li class="menu-child" data="5">
+	<a href="javascript:void(0);"><span>선교국</span></a>
+	<div class="menu_bg">
+		<div class="menu_content icon4" data="5">
+			<p class="menu_title">선교국</p>
+			<p class="menu_banner"><a href="/mission/?menu=185"><img src="/c/i18n/2020/05/79f9008b-cfb9-44fe-9f80-01638a821711/original.jpg" alt=""></a></p>
+		</div>
+	<ul class="sub-menu">
+	<li class="menu-child menu-child-2 sort51">
+		<a href="javascript:void(0);">선교비전</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=158" target="_self">선교비전</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort52">
+		<a href="javascript:void(0);">해외선교</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=159" target="_self">선교사현황</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=160" target="_self">선교활동</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=161" target="_self">선교지원</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort53">
+		<a href="javascript:void(0);">미션트립</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=483" target="_self">2024 미션트립</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=506" target="_self">2025 미션트립</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort54">
+		<a href="javascript:void(0);">국내선교</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=162" target="_self">군선교</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=163" target="_self">농어촌선교</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort55">
+		<a href="javascript:void(0);">전문인선교</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=165" target="_self">의료선교</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=166" target="_self">교육자선교</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=167" target="_self">찬양선교</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort56">
+		<a href="javascript:void(0);">북한선교</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=168" target="_self">북한선교</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort57">
+		<a href="javascript:void(0);">국제사역</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=169" target="_self">영어예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=170" target="_self">중국어예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=171" target="_self">베트남어예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=172" target="_self">일본어예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=173" target="_self">인도네시아어예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=174" target="_self">러시아어예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=176" target="_self">선교언어사역</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=179" target="_self">이중언어학교</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=178" target="_self">이주민선교</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort58">
+		<a href="javascript:void(0);">오륜국제한가족센터</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=177" target="_self">소개</a></li>
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=472" target="_self">프로그램</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort59">
+		<a href="javascript:void(0);">오륜교회 선교관</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=180" target="_self">예약안내</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort510">
+		<a href="javascript:void(0);">선교국 산하기관</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=182" target="_self">실업인 선교회</a></li>
+	<li class="menu-child menu-child-3"><a href="http://tobias.co.kr/" target="_blank">토비아스</a></li>
+	<li class="menu-child menu-child-3"><a href="http://www.hifriends.or.kr/" target="_blank">(사)프렌즈</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort511">
+		<a href="javascript:void(0);">파송선교사 후원 계좌</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/mission/?menu=185" target="_self">파송선교사 후원 계좌</a></li>
+	</ul>
+	</li>
+	</ul>
+	</div>
+</li>
+<li class="menu-child" data="6">
+	<a href="javascript:void(0);"><span>교육국</span></a>
+	<div class="menu_bg">
+		<div class="menu_content icon5" data="6">
+			<p class="menu_title">교육국</p>
+			<p class="menu_banner"><a href="https://www.youtube.com/playlist?list=PLqJa6lIUwmiYb-h0LZZIyk-vkA3_hWl4-"><img src="/c/i18n/2020/05/689f7c45-1658-4cf4-95bf-6751321e556a/original.jpg" alt=""></a></p>
+		</div>
+	<ul class="sub-menu">
+	<li class="menu-child menu-child-2 sort61">
+		<a href="javascript:void(0);">교육국 소개</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/education/?menu=194" target="_self">교육국 소개</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=195" target="_self">드림랜드,커리큘럼</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort62">
+		<a href="javascript:void(0);">꿈이 있는 미래(꿈미)</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="http://coommi.org/" target="_blank">꿈이 있는 미래(꿈미)</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort63">
+		<a href="javascript:void(0);">드림키즈</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/education/?menu=197" target="_self">영아부</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=198" target="_self">유아부</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=199" target="_self">유치부</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort64">
+		<a href="javascript:void(0);">드림스쿨</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/education/?menu=200" target="_self">8시 초등부</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=201" target="_self">초등1학년부</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=202" target="_self">초등2ㆍ3학년부</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=203" target="_self">초등4학년부</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=204" target="_self">초등5학년부</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=205" target="_self">초등6학년부</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort65">
+		<a href="javascript:void(0);">드림틴즈</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/education/?menu=206" target="_self">8시 중고등부</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=207" target="_self">중등1학년부</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=208" target="_self">중등2ㆍ3학년부</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=277" target="_self">고등부</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort66">
+		<a href="javascript:void(0);">사랑부</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/education/?menu=274" target="_self">사랑부</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort67">
+		<a href="javascript:void(0);">연합집회</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/education/?menu=210" target="_self">어린이 수요예배</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=211" target="_self">플라잉워십(미취학부)</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=280" target="_self">플라잉워십(취학부)</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort68">
+		<a href="javascript:void(0);">이마고데이스쿨</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/education/?menu=365" target="_self">소개</a></li>
+	<li class="menu-child menu-child-3"><a href="/education/?menu=366" target="_self">프로그램</a></li>
+	</ul>
+	</li>
+	</ul>
+	</div>
+</li>
+<li class="menu-child" data="7">
+	<a href="javascript:void(0);"><span>청년국</span></a>
+	<div class="menu_bg">
+		<div class="menu_content icon7" data="7">
+			<p class="menu_title">청년국</p>
+			<p class="menu_banner"><a href="https://www.remnantcampus.com/"><img src="/c/i18n/2023/06/25544fda-24ce-4391-8810-a48d367c7de5/original.jpg" alt=""></a></p>
+		</div>
+	<ul class="sub-menu">
+	<li class="menu-child menu-child-2 sort71">
+		<a href="javascript:void(0);">램넌트청년국</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=132" target="_self">램넌트 소개</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=388" target="_self">공동체 소개</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=133" target="_self">연합사역안내</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort72">
+		<a href="javascript:void(0);">양육훈련시스템</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=385" target="_self">시스템 소개</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=386" target="_self">프로그램 소개</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort73">
+		<a href="javascript:void(0);">온라인램넌트</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="https://www.youtube.com/channel/UCHtfj6LtPEfobOjrYfPX4cg" target="_blank">램넌트크리에이티브</a></li>
+	<li class="menu-child menu-child-3"><a href="https://www.remnantcampus.com/" target="_blank">램넌트 캠퍼스</a></li>
+	<li class="menu-child menu-child-3"><a href="https://oryun.careers" target="_blank">오륜 커리어스</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort74">
+		<a href="javascript:void(0);">DM공동체</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=118" target="_self">청년1부</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=119" target="_self">청년2부</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=120" target="_self">청년3부</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=121" target="_self">청년4부</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort75">
+		<a href="javascript:void(0);">SM공동체</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=124" target="_self">청년5부</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=125" target="_self">청년6부</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=126" target="_self">청년7부</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=127" target="_self">청년8부</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=128" target="_self">청년9부</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort76">
+		<a href="javascript:void(0);">PM공동체</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=130" target="_self">청년10부</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=131" target="_self">청년11부</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort77">
+		<a href="javascript:void(0);">엘피스공동체</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=122" target="_self">수험생부</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort78">
+		<a href="javascript:void(0);">쀼(신혼부부) 공동체</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=123" target="_self">쀼(신혼부부)</a></li>
+	</ul>
+	</li>
+	<li class="menu-child menu-child-2 sort79">
+		<a href="javascript:void(0);">그레이스공동체</a>
+	<ul class="sub-menu2">
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=129" target="_self">그레이스1부</a></li>
+	<li class="menu-child menu-child-3"><a href="/youth/?menu=451" target="_self">그레이스2부</a></li>
+	</ul>
+	</li>
+	</ul>
+	</div>
+</li>
+							</ul>
+							<!-- left_footer -->
+							<div class="left_footer" style="display:none;">
 
+								<div class="left_footer_banner"><a href="#url"><img src="/c/i18n/2025/06/846bf0e9-3980-4647-9a0d-fe9ccab56fd1/original.jpg" alt=""></a></div>
+								<div class="left_footer_nav">
+									<ul>
+										<li><a href="/about/?menu=312">이용약관</a></li>
+										<li><a href="/about/?menu=314">개인정보처리방침</a></li>
+										<!--li><a href="/about/?menu=316">사이트맵</a></li -->
+										<li><a href="https://mas3.ohjic.com/church/index">QR</a></li>
+										<li><a href="https://mem.ohjic.com:8004/att_report/main?church_code=4726">Report</a></li>
+									</ul>
+								</div>
+								<div class="left_footer_family">
+									<div class="left_footer_family_in">
+										<p>패밀리사이트</p>
+										<ul>
+											<li><a href="http://danielprayer.org/" target="_blank" title="새창으로 이동">다니엘기도회</a></li>
+											<li><a href="http://idospace.or.kr/" target="_blank" title="새창으로 이동">IDOS인터넷꿈희망터</a></li>
+											<li><a href="http://oryunvillage.org/" target="_blank" title="새창으로 이동">오륜비전빌리지</a></li>
+											<li><a href="http://tobias.co.kr/" target="_blank" title="새창으로 이동">(주)토비아스</a></li>
+											<li><a href="http://coommi.org/" target="_blank" title="새창으로 이동">꿈이 있는 미래</a></li>
+											<li><a href="http://www.hifriends.or.kr/" target="_blank" title="새창으로 이동">사단법인 프렌즈</a></li>
+											<li><a href="http://www.coommischool.org/" target="_blank" title="새창으로 이동">꿈미학교</a></li>
+											<li><a href="http://yhoryun.org/" target="_blank" title="새창으로 이동">영훈오륜교회</a></li>
+											<li><a href="http://www.bundangoryun.org/" target="_blank" title="새창으로 이동">분당오륜교회</a></li>
+											<li><a href="http://www.storyun.org/" target="_blank" title="새창으로 이동">송탄오륜교회</a></li>
+											<li><a href="http://www.maranathagh.co.kr/" target="_blank" title="새창으로 이동">마라나타하늘정원</a></li>
+										</ul>										
+									</div>
+								</div>
+								<div class="left_footer_link">
+								    <span style="display:none;"><a href="#">PC버전 보기</a></span>
+									<span><a href="https://pf.kakao.com/_MTAsl" target="_blank">문의 및 건의</a></span>
+								</div>
+							</div>
+							<!--// left_footer -->
+						</div>
+					</div>
+					<!--// mainmenu -->
+					
+				</div>
+			</div>
+			<!--// lnbList -->
+		</div>
+		<!-- //menuTree -->
+	</div>
+	<!-- //header -->
+
+	<!-- allSearch -->
+	<div class="inner">
+		<div id="topSearch">
+			<p class="searchText">통합검색</p>
+			<form name="frmSearch" method="get" action="/main/search">
+			<input type="text" name="keyword" value="" title="검색어">
+			<input type="submit" value="검색">
+			</form>
+			<p class="searchClose"><a href="#close"><img src="/assets/ko/img/btn_close.png" alt="검색창 닫기"></a></p>
+		</div>
+	</div>		
+	<!-- //allSearch -->	
+
+	<!-- container -->
+<div id="Main" class="container">
+		<!-- popSns -->
+		<div class="layerPop" id="popSns">
+			<div class="behindBg" onclick="fnCloseLayer('popSns');"></div>
+			<!--popup_in -->
+			<div class="popup_in sns">
+				<!-- con -->
+				<div class="con txt_center">					
+					<h5 class="none">공유하기</h5>
+					<!-- popup_icon -->
+					<div class="popup_icon">
+											<a href="#url" class="sns_share" id="kakaotalk_share" data="kakaotalk"><img src="/assets/ko/img/sns_icon_talk.jpg" alt=""></a>
+											<a href="#url" class="sns_share" data="band"><img src="/assets/ko/img/sns_icon_band.jpg" alt=""></a>
+						<a href="#url" class="sns_share" data="facebook"><img src="/assets/ko/img/sns_icon_facebook.jpg" alt=""></a>
+						<a href="#url" class="sns_share" data="twitter"><img src="/assets/ko/img/sns_icon_twitter.jpg" alt=""></a>
+					</div>
+					<!--// popup_icon -->	
+					<h5 class="none hide" style="display:none;">파일 다운로드</h5>
+					<!-- popup_download -->
+					<div class="popup_download hide" style="display:none;">
+						<a href="#url"><img src="/assets/ko/img/sns_icon_mp3.jpg" alt=""></a>
+						<a href="#url"><img src="/assets/ko/img/sns_icon_vod.jpg" alt=""></a>
+					</div>
+					<!--// popup_download -->	
+					<input name="contentCopy" id="contentCopy" value="https://oryun.org/" title="입력" placeholder="https://oryun.org/" class="w_txt" type="text"><a href="#url" class="button link_share">복사</a>
+					
+				</div>
+				<!--// con -->
+				<p class="close"><a href="#url" onclick="fnCloseLayer('popSns');" ><i class="xi-close"></i></a></p>
+			</div>
+		</div>
+		<!--// popSns -->
+		
+		<!-- mVisual -->
+		<div id="mVisual">
+		  <ul>
+			
+			<li class="bg" style="background:url(/c/i18n/2024/12/8802cfd1-1c1f-4fc4-93f4-3376efa4012e/original.jpg);">
+				<div class="inner">
+											<p>HAPPY CHURCH &nbsp; HEALTHY CHURCH</p>
+						<p class="mV_txtbig"><b>행복한 교회 건강한 교회</b></p>
+						<p class="mV_txtbig"><b> 오륜교회 </b></p>
+															</div>
+			</li>			
+	
+          </ul>
+		</div>
+		<!-- //mVisual -->
+		<!-- section1 -->
+		<div id="section1">
+			<div class="inner">
+				<div id="innerBox1">
+				
+					<!-- tab_list -->
+					<div class="tab_list">
+						<ul class="tabBar">
+							<li><a href="#tab2">공지사항</a></li>
+							<li class="bar sch_tab" style="display:none;"><a href="#tab1">교회일정</a></li>
+						</ul>
+						<!-- tabPage -->
+						<div class="tabPage">
+							<ul>
+								<li class="notice"><span class="icon">공지</span><a href="/life/?menu=241&mode=view&bid=4130"> 주일 외부 주차장 이용안내</a></li>
+								<li class="notice"><span class="icon">공지</span><a href="/life/?menu=241&mode=view&bid=2290"> 기부금 영수증 발급 유의사항 안내</a></li>
+								<li><a href="/life/?menu=241&mode=view&bid=4543"> 11월 신착도서 안내</a></li>
+								<li><a href="/life/?menu=241&mode=view&bid=4490"> 10월 신착도서 안내	</a></li>
+								<li><a href="/life/?menu=241&mode=view&bid=4431"> 9월 신착도서 안내</a></li>
+							</ul>
+							<p class="txt_center"><a href="/life/?menu=241" class="white_bullet">공지사항 더보기<em></em></a></p>
+						</div>
+						<!-- //tabPage -->
+						<!-- tabPage -->
+						<div class="tabPage">
+							<div class="month">
+<a href="#url" class="sch_btn active" data="202511" data2="2025-11-01">11월</a><a href="#url" class="sch_btn" data="202512" data2="2025-12-01">12월</a><a href="#url" class="sch_btn" data="202601" data2="2026-01-01">01월</a><a href="#url" class="sch_btn" data="202602" data2="2026-02-01">02월</a>							</div>
+							<ul id="schedule_list">
+							</ul>
+							<p class="txt_center pd_b20"><a href="#url" class="white_bullet sch_more">교회일정 더보기<em></em></a></p>
+						</div>
+						<!-- //tabPage -->
+					</div>
+					<!-- //tab_list -->
+					<div class="mainSermon">
+					     <!-- sermonNews -->
+						<div class="sermonNews">
+							<h5>주일 설교<span><a href="/tv/?menu=57"><img src="/assets/ko/img/main/sermonNews_more.png" alt="더보기"></a></span></h5>
+							<div class="cont_img"><a class="tv_list" href="/tv/?menu=57&mode=view&tid=57088"><img class="tv_thumbnail" src="/c/tv/2025/11/57088/thumbnail_16by9.jpg" alt=""></a></div>
+							<div class="cont">
+								<ul>
+<li><a class="tv_list" href="/tv/?menu=57&mode=view&tid=57088" data="/c/tv/2025/11/57088/thumbnail_16by9.jpg">7가지 표적 '7Signs' 믿음은 길 위에서 자란다</a></li><li><a class="tv_list" href="/tv/?menu=57&mode=view&tid=57074" data="/c/tv/2025/10/57074/thumbnail_16by9.jpg">벧엘이 벧아웬이 되지 않게 하라</a></li><li><a class="tv_list" href="/tv/?menu=57&mode=view&tid=57060" data="/c/tv/2025/10/57060/thumbnail_16by9.jpg">7가지 표적 '7Signs' 익숙함을 넘어, 믿음의 영역으로</a></li><li><a class="tv_list" href="/tv/?menu=57&mode=view&tid=57044" data="/c/tv/2025/10/57044/thumbnail_16by9.jpg">7가지 표적 '7Signs' 기적을 부르는 믿음</a></li>								</ul>
+							</div>
+						</div>
+						<!-- //sermonNews -->
+						<div class="mainSermon_btn">
+							<a class="ms_bg1" 
+							href="/guide/?menu=22">예배 안내</a><a class="ms_bg2" 
+							href="/guide/?menu=17">오시는 길</a><a class="ms_bg3" 
+							href="/guide/?menu=25">예배차량 안내</a><a class="ms_bg4" 
+							href="/life/?menu=255&yy=2025&mm=11">주보</a>
+						</div>
+					</div>
+					<!-- pc-bannerZone -->
+					<div id="bannerZone">
+						<ul class="bannerZone_img">
+<li><a href="https://oryun.org/guide/?menu=37" class="pc_banner"><img src="/c/i18n/2021/10/cd5afc2b-f5b8-4d3d-947c-3e741ab3a507/original.jpg" alt=""></a><a href="https://oryun.org/guide/?menu=37" class="mo_banner"><img src="/c/i18n/2021/10/c14ace37-e578-4cfc-8133-bd899c0ed74e/original.jpg" alt=""></a></li><li><a href="https://oryun.org/life/?menu=378" class="pc_banner"><img src="/c/i18n/2025/05/ea705877-4417-4dfd-a96a-a6d802014296/original.jpg" alt=""></a><a href="https://oryun.org/life/?menu=378" class="mo_banner"><img src="/c/i18n/2025/05/b5cf4f03-4135-4ecd-9748-f4255cc54ed0/original.jpg" alt=""></a></li><li><a href="https://oryun.org/life/?menu=242&mode=view&bid=828" class="pc_banner"><img src="/c/i18n/2021/09/44ce821e-a7cd-462e-bf27-d757f273acb0/original.jpg" alt=""></a><a href="https://oryun.org/life/?menu=242&mode=view&bid=828" class="mo_banner"><img src="/c/i18n/2021/09/3b119ed2-5ca3-42c3-ab15-85fcdf63a1d8/original.jpg" alt=""></a></li><li><a href="https://oryun.org/life/?menu=241&mode=view&bid=2290" class="pc_banner"><img src="/c/i18n/2023/02/cf65e9a2-a84a-496b-9f8b-dbd1d332373d/original.jpg" alt=""></a><a href="https://oryun.org/life/?menu=241&mode=view&bid=2290" class="mo_banner"><img src="/c/i18n/2023/02/7b847249-b792-47b2-a909-cdd16c7d73b2/original.jpg" alt=""></a></li><li><a href="https://oryun.org/life/?menu=241&mode=view&bid=1513" class="pc_banner"><img src="/c/i18n/2025/08/fe9fd656-7380-41df-b9aa-94c341387df9/original.jpg" alt=""></a><a href="https://oryun.org/life/?menu=241&mode=view&bid=1513" class="mo_banner"><img src="/c/i18n/2025/08/3d47c9f2-b875-41aa-9cee-35d0dafcd481/original.jpg" alt=""></a></li>						</ul>
+					</div>
+					<!-- //pc-bannerZone -->
+				</div>
+			</div>
+			<div class="inner">
+				<div id="innerBox2">
+				    <!-- eventNews -->
+					<div id="eventNews">
+						<h5>행사/소식<span class="eventNews_more"><a href="/life/?menu=242">더보기</a></span></h5>
+						<ul>
+							<li>
+								<a href="/life/?menu=242&mode=view&bid=4522">
+									<div class="cont_img"><img src="/c/board_attach/2025/10/6f6b3625-25a8-4c3d-98fb-eaa130e188c6/desktop.jpg" alt=""></div>
+									<div class="cont">
+										<p class="tit"><span class="icon"><span class="ing">진행중</span></span> 한국교회와 함께 큐티를 보다 1..</p>
+										<p class="txt"><br />2025-11-01 ~ 2025-11-30<br /></p>
+									</div>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- //eventNews -->
+					<!-- eventZone -->
+					<div id="eventZone">
+						<ul class="">
+<li><a href="https://www.coommimall.com/shop_goods/goods_view.htm?category=01020000&goods_idx=426226&goods_bu_id=admin" class="pc_banner"><img src="/c/i18n/2025/10/55d8f59a-6b2e-4aa6-a829-ef6db995ad69/original.jpg" alt=""></a><a href="https://www.coommimall.com/shop_goods/goods_view.htm?category=01020000&goods_idx=426226&goods_bu_id=admin" class="mo_banner"><img src="/c/i18n/2025/10/2d128b51-48f0-4a5b-8bbb-7635b4a57738/original.jpg" alt=""></a></li>						</ul>
+					</div>
+					<!-- //eventZone -->
+					<!-- tab_list -->
+					<div class="tab_list">
+						<ul class="tabBar">
+							<li><a href="#tab1">자료실  </a></li>
+							<li class="bar"><a href="#tab2">교우소식 <span class="new_red"></span></a></li>
+						</ul>
+						<!-- tabPage -->
+						<div class="tabPage data">
+							<ul>
+								<li><a href="/life/?menu=255&yy=2025&mm=11"> 11월 2일 주보</a></li>
+								<li><a href="/life/?menu=256"> [오륜설교나눔] 믿음은 길 위에서 자란다</a></li>
+								<li style="display:none;"><a href="/life/?menu=257"> </a></li>
+								<!-- 교회요청 임시 삭제 2021-12-28 -->
+								<!--
+								<li><a href="/life/?menu=259">2021-8 바탕화면</a></li>
+								-->
+								<li><a href="/life/?menu=258"> 그레이스저널 2025 가을</a></li>
+							</ul>
+						</div>
+						<!-- //tabPage -->
+						<!-- tabPage -->
+						<div class="tabPage friend">
+							<ul>
+								<li><a href="/life/?menu=247&bid=4547"><em class="faq_part2">장례</em> <img src="/assets/ko/img/TV_main/icon_new.gif" alt="New" class="icon_new">[교회장 - 강동2]故 하삼옥 성도 소천 / 김지희 집사(서영대 집사) 모친/김신희 성도 모친</a></li>
+								<li><a href="/life/?menu=247&bid=4546"><em class="faq_part2">장례</em>[교구장-가락] 이영학 권사 (조홍민 성도) 모친 소천</a></li>
+								<li><a href="/life/?menu=247&bid=4544"><em class="faq_part2">장례</em>[교구장-그레이스2부] 김경숙 성도 부친 소천</a></li>
+								<li><a href="/life/?menu=247&bid=4542"><em class="faq_part2">장례</em>[교구장-파크리오]최현주 성도 시모 소천</a></li>
+							</ul>
+						</div>
+						<!-- //tabPage -->
+					</div>
+					<!-- //tab_list -->
+				</div>
+			</div>
+			<div class="inner">
+				<div class="innerBox3">
+                    <!-- etcZone -->
+					<div class="etcZone">
+						<ul>
+							<li><a href="/life/?menu=248"><img src="/assets/ko/img/main/etcZone_01.jpg" alt=""> 큐티</a></li>
+							<li><a href="/guide/?menu=37"><img src="/assets/ko/img/main/etcZone_02.jpg" alt=""> 새가족 등록</a></li>
+							<li><a href="/life/?menu=252"><img src="/assets/ko/img/main/etcZone_03.jpg" alt=""> 온라인 헌금</a></li>
+							<li><a href="/guide/?menu=18#url"><img src="/assets/ko/img/main/etcZone_05.jpg" alt=""> 주차안내</a></li>
+							<!--<li><a href="/life/?menu=257"><img src="/assets/ko/img/main/etcZone_04.jpg" alt=""> 2021 요람</a></li>-->
+						</ul>
+					</div>
+					<!-- //etcZone -->
+				</div>
+			</div>
+		</div>
+		<!-- //section1 -->		
+
+		<!-- section2 -->
+		<div id="section2">
+			<div class="inner">
+
+				<h4>오륜 패밀리 사이트</h4>
+				<!-- familySite -->
+				<div id="familySite">
+					<!-- familyBox -->
+					<div class="familyBox ">
+						<dl>
+							<dt><img src="/c/family_site/2020/06/1ca233e7-61dd-44ad-8ce1-9dcb988b69a8/desktop.jpg" alt=""></dt>
+							<dd>
+								<div class="cont_img"><img src="/c/family_site/2025/09/ab059036-f59e-492e-a70e-a41c5b85a2d1/desktop.jpg" alt=""></div>
+								<div class="cont_txt">
+									<ul>
+										<li><a href="https://www.danielprayer.org/hmpg/biz/main/HmpgMain.do" target="_blank">다니엘기도회</a></li>
+										<li><a href="https://www.danielprayer.org/hmpg/biz/donation/Love.do" target="_blank">사랑의헌금..Love Offering</a></li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<!--// familyBox -->
+					<!-- familyBox -->
+					<div class="familyBox ">
+						<dl>
+							<dt><img src="/c/family_site/2024/05/92a6547e-1724-4420-8438-113219e5ac86/desktop.png" alt=""></dt>
+							<dd>
+								<div class="cont_img"><img src="/c/family_site/2025/01/06d0b434-9a7d-4286-bcc5-d6cca0e03e64/desktop.jpg" alt=""></div>
+								<div class="cont_txt">
+									<ul>
+										<li><a href="http://dnaministry.kr/" target="_blank">DNA Ministry 홈페이지</a></li>
+										<li><a href="https://link.donationbox.co.kr/donationBoxJoin.jsp?campaignuid=I353DNwaW1" target="_blank">DNA Ministry 후원</a></li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<!--// familyBox -->
+					<!-- familyBox -->
+					<div class="familyBox ">
+						<dl>
+							<dt><img src="/c/family_site/2020/04/a0e906e6-3113-4058-98b0-c0c0bda8a228/desktop.jpg" alt=""></dt>
+							<dd>
+								<div class="cont_img"><img src="/c/family_site/2025/09/8ac55de0-4373-4d58-9913-fafbc396258d/desktop.jpg" alt=""></div>
+								<div class="cont_txt">
+									<ul>
+										<li><a href="http://coommi.org" target="_blank">꿈미 홈페이지</a></li>
+										<li><a href="http://coommi.org/board_btoO49" target="_blank">큐티를 보다 가정예배 순서지</a></li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<!--// familyBox -->
+					<!-- familyBox -->
+					<div class="familyBox ">
+						<dl>
+							<dt><img src="/c/family_site/2020/04/296c2fa1-d391-407a-a354-d6eb667eb0c9/desktop.jpg" alt=""></dt>
+							<dd>
+								<div class="cont_img"><img src="/c/family_site/2020/04/4c0e6e53-fd83-47f4-b155-3fd884e16e6d/desktop.jpg" alt=""></div>
+								<div class="cont_txt">
+									<ul>
+										<li><a href="http://oryunvillage.org/rb/?c=15/22" target="_blank">오륜비전빌리지 비전 및 소개</a></li>
+										<li><a href="http://oryunvillage.org/rb/?c=16/44" target="_blank">오륜비전빌리지 시설 안내</a></li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<!--// familyBox -->
+					<!-- familyBox -->
+					<div class="familyBox ">
+						<dl>
+							<dt><img src="/c/family_site/2023/06/d4de6b16-47bb-4b00-a245-4a6fe1d940ac/desktop.png" alt=""></dt>
+							<dd>
+								<div class="cont_img"><img src="/c/family_site/2023/06/3908b1f9-07c6-4d4b-b11a-5daebe9d209e/desktop.png" alt=""></div>
+								<div class="cont_txt">
+									<ul>
+										<li><a href="https://oryunbusiness.com/31" target="_blank">홈페이지 사역 소식</a></li>
+										<li><a href="https://oryunbusiness.com/35" target="_blank">홈페이지 회원 사업장 정보</a></li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<!--// familyBox -->
+					<!-- familyBox -->
+					<div class="familyBox ">
+						<dl>
+							<dt><img src="/c/family_site/2025/01/76a3f8e6-6633-4341-8761-1d46e26764b0/desktop.jpg" alt=""></dt>
+							<dd>
+								<div class="cont_img"><img src="/c/family_site/2025/01/29065b38-0743-444c-b580-2cca6b447748/desktop.png" alt=""></div>
+								<div class="cont_txt">
+									<ul>
+										<li><a href="https://oryunprayer.org/document/aboutus" target="_blank">오륜교회 안수집사회 소개</a></li>
+										<li><a href="https://oryunprayer.org/board/notice" target="_blank">오륜교회 안수집사회 공지</a></li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<!--// familyBox -->
+					<!-- familyBox -->
+					<div class="familyBox ">
+						<dl>
+							<dt><img src="/c/family_site/2020/10/6d599008-67d3-4a4d-bee1-cdce37eee40e/desktop.jpg" alt=""></dt>
+							<dd>
+								<div class="cont_img"><img src="/c/family_site/2020/10/98b3c358-0370-4796-a4a2-16cbf4418e65/desktop.jpg" alt=""></div>
+								<div class="cont_txt">
+									<ul>
+										<li><a href="http://www.maranathagh.co.kr/home/a03/" target="_blank">마라나타 하늘정원 특장점</a></li>
+										<li><a href="http://www.maranathagh.co.kr/home/a04/" target="_blank">마라나타 하늘정원 찾아오시는 길</a></li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<!--// familyBox -->
+					<!-- familyBox -->
+					<div class="familyBox ">
+						<dl>
+							<dt><img src="/c/family_site/2020/04/3fc667e2-5416-4a8a-bc94-c8e2cf564afe/desktop.jpg" alt=""></dt>
+							<dd>
+								<div class="cont_img"><img src="/c/family_site/2022/06/f71ec150-e32e-4223-b855-e63014242375/desktop.png" alt=""></div>
+								<div class="cont_txt">
+									<ul>
+										<li><a href="https://www.coommischool.com/board/?gid=7402&id=34375&did=4708314227" target="_blank">2022학년도 입학설명회(초등) 영상</a></li>
+										<li><a href="https://www.coommischool.com/enter/" target="_blank">2022학년도 중등과정 추가모집 안내</a></li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<!--// familyBox -->
+					<!-- familyBox -->
+					<div class="familyBox ">
+						<dl>
+							<dt><img src="/c/family_site/2020/06/b06c976f-42cf-4c10-ac0f-08b2252d269f/desktop.jpg" alt=""></dt>
+							<dd>
+								<div class="cont_img"><img src="/c/family_site/2024/10/db79ca3c-02f3-4cd7-9c4b-85eb977af29a/desktop.png" alt=""></div>
+								<div class="cont_txt">
+									<ul>
+										<li><a href="http://www.hifriends.or.kr/works.php" target="_blank">프렌즈 사업 안내</a></li>
+										<li><a href="http://www.hifriends.or.kr/support.php" target="_blank">프렌즈 후원 안내</a></li>
+									</ul>
+								</div>
+							</dd>
+						</dl>
+					</div>
+					<!--// familyBox -->
+				</div>
+				<!-- //familySite -->
+
+			</div>
+		</div>
+		<!-- //section2 -->	
+
+
+<script>
+$(document).ready(function(){
+	$(".sch_more").click(function() {
+		$(".sch_btn").each(function() {
+			if($(this).hasClass("active")===true){
+				sch = $(this).attr('data2');
+				location.href="/life/?menu=243&sch="+sch;
+			}
+		});
+	});
+
+	$(".sch_tab").click(function() {
+		cnt = $("#schedule_list > li").length;
+		if(cnt < 1) {
+			$( ".sch_btn").eq(0).trigger('click');
+		}
+	});
+
+	$(".sch_btn").click(function() {
+		$(".sch_btn").removeClass("active");
+		$(this).addClass("active");
+		data = $(this).attr('data');
+		$.ajax({
+			url: '/main/schedule',
+			data: 'day='+data,
+			dataType: 'json',
+			success: function(result) {
+				data = '';
+				$.each(result, function(idx, val) {
+					data += '<li><a href="/life/?menu=243"><span>'+val.day+'</span>'+val.subject+'</a></li>';
+				});
+				if(data=='') {
+					data += '<li><a href="#url">일정이 없습니다.</a></li>';
+				}
+				$("#schedule_list").html(data);
+			}
+		});
+	});
+
+	$(".tv_list").on("mouseover", function(){
+		src = $(this).attr('data');
+		$(".tv_thumbnail").attr("src", src);
+	});
+
+	$('#mVisual ul').bxSlider({
+				auto: false,
+		autoStart: false,
+		autoControls: false, 
+		controls: false,
+		pager: false
+			});
+
+	$('#bannerZone ul').bxSlider({
+		auto: true,
+		autoControls: true
+	});	
+
+	$('#eventZone ul').bxSlider({
+		auto: ($("#eventZone li").length > 1) ? true: false,
+		pager: ($("#eventZone li").length > 1) ? true: false,
+		autoControls: true
+	});
+
+	$('#eventNews ul').bxSlider({
+		auto: true,
+		autoControls:true,
+		pagerType: "short",
+		autoControlsCombine:true
+	});
+
+	$('#familySite').slick({
+		slidesToShow:4,
+		arrows: true,
+		centerPadding: '40px',
+		dots:false,	 
+		responsive: [{
+			breakpoint: 768,
+			settings: {
+				slidesToShow:2
+			}
+		}]
+	});
+});
+</script>
+		<!-- mobile-quick -->
+		<div class="m_quick">
+			<div class="m_quick_body">
+				<ul>
+<li class="first"><a href="#" class="lang_switch" data="ko"><img src="/assets/img/icon_lang1.gif" alt="한국어"></a></li>
+</ul>
+				<p class="quick_btn"><a href="#url"><img src="/assets/ko/img/btn_prev.gif" alt="열기"></a></p>
+				<p class="quick_btn_close"><a href="#url"><img src="/assets/ko/img/btn_next.gif" alt="닫기"></a></p>
+				<p class="quick_top"><a href="#" onclick="fnOpenLayer('popSns');"><img src="/assets/ko/img/btn_sns.gif" alt="SNS"></a></p>
+				<p class="quick_top"><a href="#"><img src="/assets/ko/img/btn_top.gif" alt="TOP"></a></p>
+			</div>
+		</div>
+		<!-- //mobile-quick -->	
+	</div>
+	<!-- //container -->
+
+	<!-- //container -->
+	<div id="tableJsCss">&nbsp;</div>
+
+	<!-- footer -->
+	<div id="footer" data="">
+		<!-- footerNav -->
+		<div id="footerNav">
+			<div class="inner">
+				<div class="footerNavMobile">
+					<ul>
+						<li><a href="/about/?menu=312">이용약관</a></li>
+						<li><a href="/about/?menu=314">개인정보처리방침</a></li>
+						<!--li><a href="https://pf.kakao.com/_MTAsl">문의 및 건의</a></li>
+						<li><a href="/about/?menu=316">사이트맵</a></li-->
+						<li><a href="https://mas3.ohjic.com/church/index"  target="_blank" title="교인인증">QR</a></li>
+						<li><a href="https://fin.ohjic.com/index/group/4726">FIN</a></li>
+						<!--<li><a href="https://mem.ohjic.com:8004/att_report/main?church_code=4726"  target="_blank" title="재정청구서">Report</a></li>
+						<li><a href="http://disk.oryun.org/webdisklink.php?path=lqyipJqonqSarKbl1ObdsA=="  target="_blank" title="원격지원">Help</a></li>-->
+					</ul>
+				</div>
+				<p class="pc_top"><a href="#wrap"><img src="/assets/ko/img/btn_top_pc.png" alt="TOP"></a></p>
+			</div>
+		</div>
+		<!-- //footerNav -->
+
+		<!-- footerCopyright -->
+		<div id="footerCopyright" class="inner">
+			<p class="footerLogo"><a href="#"><img src="/assets/ko/img/f-logo.gif" alt="오륜교회 하단 BI"></a></p>
+			<p class="Copyright">
+				서울시 강동구 강동대로 235 (성내동 449-7) 오륜교회 (우)05408<br />
+				<span>TEL</span> 02-485-4004  /  <span>FAX</span> 02-485-3585  /  <span>Email</span> webmaster@oryun.org<br>
+				Copyright © Oryun Community Church, All rights reserved.
+			</p>
+			<ul>
+			<!--	<li><a href="//www.instagram.com/oryun.community.church/" target="_blank" title="새창으로 이동"><img src="/assets/img/f_sns05_off.png" alt="" class="rollover"></a></li>
+				<li><a href="//www.facebook.com/oryunch/" target="_blank" title="새창으로 이동"><img src="/assets/img/f_sns01_off.png" alt="페이스북" class="rollover"></a></li>
+				<li><a href="//twitter.com/oryun_t" target="_blank" title="새창으로 이동"><img src="/assets/img/f_sns02_off.png" alt="트위터" class="rollover"></a></li>
+				<li><a href="//www.youtube.com/user/oryunchurch" target="_blank" title="새창으로 이동"><img src="/assets/img/f_sns03_off.png" alt="유튜브" class="rollover"></a></li>
+				<li><a href="//pf.kakao.com/_MTAsl" target="_blank" title="새창으로 이동"><img src="/assets/img/f_sns06_off.png" alt="카카오톡" class="rollover"></a></li>-->
+			</ul>
+			<div id="mainSiteAll">
+				<a href="#siteAll" class="btn_siteAllOpen">패밀리사이트 &nbsp; <img src="/assets/ko/img/btn_siteAllarr.png" alt=""></a>
+				<a href="#siteAllclose" class="btn_siteAllClose">패밀리사이트 &nbsp; <img src="/assets/ko/img/btn_close2.png" alt=""></a>
+			</div>
+			<!-- siteAll -->
+			<div id="siteAll">
+				<div class="siteGroup">
+					<ul>
+						<li><a href="http://danielprayer.org/" target="_blank" title="새창으로 이동">다니엘기도회</a></li>
+						<!-- <li><a href="http://idospace.or.kr/" target="_blank" title="새창으로 이동">IDOS인터넷꿈희망터</a></li> -->
+						<li><a href="https://dnaministry.kr/" target="_blank" title="새창으로 이동">DNA Ministry</a></li>
+						<li><a href="http://oryunvillage.org/" target="_blank" title="새창으로 이동">오륜비전빌리지</a></li>
+						<li><a href="http://tobias.co.kr/" target="_blank" title="새창으로 이동">(주)토비아스</a></li>
+						<li><a href="https://oryunbusiness.com/" target="_blank" title="새창으로 이동">오륜실업인선교회</a></li>
+						<li><a href="https://oryunprayer.org/" target="_blank" title="새창으로 이동">오륜교회 안수집사회</a></li>
+						<li><a href="http://coommi.org/" target="_blank" title="새창으로 이동">꿈이 있는 미래</a></li>
+						<li><a href="http://www.hifriends.or.kr/" target="_blank" title="새창으로 이동">사단법인 프렌즈</a></li>
+						<li><a href="http://www.coommischool.com/" target="_blank" title="새창으로 이동">꿈미학교</a></li>
+						<li><a href="http://yhoryun.org/" target="_blank" title="새창으로 이동">영훈오륜교회</a></li>
+						<li><a href="http://www.bundangoryun.org/" target="_blank" title="새창으로 이동">분당오륜교회</a></li>
+						<li><a href="http://www.storyun.org/" target="_blank" title="새창으로 이동">송탄오륜교회</a></li>
+						<li><a href="http://www.maranathagh.co.kr/" target="_blank" title="새창으로 이동">마라나타하늘정원</a></li>
+					</ul>
+				</div>
+			</div>
+			<!-- //siteAll -->
+		</div>
+		<!-- //footerCopyright -->
+	</div>
+	<!-- //footer -->
+	<div id="overlay"></div>
+	
+</div>
+<!-- //wrap -->
+
+
+<style>
+	.main_popup.layer_popup1{left:240px;top:0;}
+	.main_popup.layer_popup2{left:600px;top:0;}
+	.main_popup.layer_popup3{left:240px;top:360px;}
+	.main_popup.layer_popup4{left:600px;top:360px;}
+	.main_popup.layer_popup5{left:240px;top:720px;}
+	.main_popup.layer_popup6{left:600px;top:720px;}
+</style>
+
+		<!-- main_popup -->
+		<div id="main_popup"> 
+			<!-- main_popup1 -->
+			<div class="main_popup layer_popup1" data="226" style=" display: none; ">
+				<div class="main_popup_in img" data="1">
+					<a href="https://oryun.org/life/?menu=253#url" class="layer_popup_height pc_banner" data_type="img"><img class="layer_img" src="/c/board/2025/11/950ab1e4-c2e2-4b1c-a8a6-5191607ee225/original.jpg" alt=""></a>
+					<a href="https://oryun.org/life/?menu=253#url" class="mob_banner"><img src="/c/board/2025/11/a3b6cc6f-a559-4c12-8740-afa315f72793/original.jpg" alt=""></a>
+				</div>
+				<!-- main_popup_closed -->
+				<div class="main_popup_closed">
+					<div class="fl">
+						<input type="checkbox" id="layer_popup1" data="226" value="226" class="popup_none layer_popup">
+						<label for="layer_popup1" data="226"> 오늘 하루동안 이 창을 열지 않습니다.</label>
+					</div>
+					<div class="fr"><a href="#url" class="popupClose" data="1"><i class="xi-close"></i></a></div>
+				</div>
+				<!--// main_popup_closed -->
+			</div>
+		</div>
+		<!-- //main_popup -->
+
+<script>
+
+	$(document).ready(function () {
+		h1 = h2 = 0;
+		h1 = $(".main_popup_in").eq(0).height();
+		layer_cnt = 1;
+		height1 = $(".layer_popup1").height() + 40;
+		height2 = $(".layer_popup2").height() + 40;
+		if(h1 > h2) {
+			$(".layer_popup3").animate({'left':'600px', 'top': height2+'px'}, 0);
+			if(layer_cnt > 3) {
+				$(".layer_popup4").animate({'left':'240px', 'top': height1+'px'}, 0);
+			}
+		} else if(h2 > h1) {
+			$(".layer_popup3").animate({'left':'240px', 'top': height1+'px'}, 0);
+			if(layer_cnt > 3) {
+				$(".layer_popup4").animate({'left':'600px', 'top': height2+'px'}, 0);
+			}
+		} else {
+			if(layer_cnt == 3) {
+				$(".layer_popup3").animate({'left':'420px', 'top': height1+'px'}, 0);
+			} else if(layer_cnt > 3) {
+				$(".layer_popup3").animate({'left':'240px', 'top': height1+'px'}, 0);
+			}
+			if(layer_cnt > 3) {
+				$(".layer_popup4").animate({'left':'600px', 'top': height2+'px'}, 0);
+			}
+		}
+
+
+		$(".layer_popup").click(function() {
+			popup_id = $(this).attr("data");
+			$(".main_popup[data="+popup_id+"]").hide();
+			val = $(this).val();
+			$.cookie("layer"+val, 'oryun', { expires: 1, path: '/' });
+		});
+
+		$(".popupClose").click(function() {
+			popup_id = $(this).attr("data");
+			$(".layer_popup"+popup_id).hide();
+		});
+
+	 
+			popup_id = $.cookie("layer226");
+			if (popup_id=='oryun') {
+				$(".main_popup[data=226]").hide();
+			} else {
+				$(".main_popup[data=226]").show();
+			}
+		})
+
+</script>
+
+<script> 
+
+	function onair_popup_hidden() {
+		$("#live_popup").hide();
+		$("overlay").hide();
+		$("html, body").removeAttr("style");
+	}
+
+	var SocketIO = (function() {
+		var init = false;
+		var socket = io('https://oryun.org:8080', {
+			upgrade: false,
+			transports: ['websocket']
+		});
+		var countdown = 0;
+		var countdownInterval = undefined;
+
+		function secondToHms(second) {
+			if (second >= 360000) {
+				return '99:59:59+';
+			} else {
+				second = parseInt(second, 10);
+
+				var hour = Math.floor(second / 3600);
+				var minute = Math.floor((second - (hour * 3600)) / 60);
+				second = second - (hour * 3600) - (minute * 60);
+
+				return _.padStart(hour, 2, 0) + ':' + _.padStart(minute, 2, 0) + ':' + _.padStart(second, 2, 0);
+			}
+		}
+
+		function showCountdown() {
+			//console.log(secondToHms(countdown));
+			console.log(countdown);
+			if(countdown=='0') {
+				location.reload();
+			}
+			countdown--;
+		}
+
+		return {
+			init: function() {
+				if (init) {
+					return false;
+				}
+				init = true;
+
+				socket.on('connect', function() {
+					socket.emit('join', 'live');
+				});
+
+				socket.on('live', function(data) {
+					if (typeof data.live.started_at !== 'undefined') {
+						//console.log('live', JSON.stringify(data.live, null, 4));
+						result = data.live;
+						countdown = 0;
+
+						clearInterval(countdownInterval);
+						$(".btnOnAir").find('.offair').hide();
+						$(".btnOnAir").find('.onair').show();
+					} else if (typeof data.next.started_at !== 'undefined') {
+						//console.log('next', JSON.stringify(data.next, null, 4));
+						result = data.next;
+
+						countdown = result.started_at - moment().unix();
+
+						if (typeof countdownInterval === 'undefined') {
+							countdownInterval = setInterval(function() {
+								showCountdown();
+							}, 1 * 1000);
+						}
+						$(".btnOnAir").find('.onair').hide();
+						$(".btnOnAir").find('.offair').show();
+						$(".btnOnAir").find('.next_time').show();
+					} else {
+						countdown = 0;
+						clearInterval(countdownInterval);
+					}
+					if(typeof result !== "undefined") {
+						type = result.type;
+						channel_id = result.channel_id;
+						category = result.category;
+						title = result.title;
+						bible_title = result.bible_title;
+						speaker = result.speaker.name+''+result.speaker.duty;
+						started_at = result.started_at;
+					}
+				});
+			}
+		}
+	}());
+
+	// live popup
+	$(document).on("click", "#live_popup .overlay", function(){
+		onair_popup_hidden()
+	});
+	$(document).on("click", ".live_popup_closed", function(){
+		var never_see = $("#never_see:checked").val();
+
+		if( typeof never_see != "undefined" ) {
+			// 쿠키, 브라우저 종료 전까지 뜨지 않기.
+			$.cookie('never_see', '1');
+		}
+		// jwplayer
+		if( $("#oryun_player").length == 1 ) {
+			$("#oryun_player").css("z-index", "");
+		}
+		onair_popup_hidden();
+	});
+
+	$(document).ready(function() {
+		SocketIO.init();
+				$('.next_time').countdown('2025-11-07 18:30:01')
+			.on('update.countdown', function(event) {
+			var totalHours = event.offset.totalDays * 24 + event.offset.hours;
+			format = '';
+			format += totalHours+':%M:%S';
+			$(this).html(event.strftime(format));
+		})
+		.on('finish.countdown', function(event) {
+		});
+				never_see = $.cookie('never_see');
+		if( typeof never_see == "undefined" ) {
+			never_see = 0;
+		}
+		if(never_see != "1" ) {
+			scrollTo(0,0);
+			// jwplayer
+			if( $("#oryun_player").length == 1 ) {
+				$("#oryun_player").css("z-index", "-1");
+			}
+						$("#live_popup").show();
+					} // if by value
+	});
+</script> 
 </body>
-
 </html>
